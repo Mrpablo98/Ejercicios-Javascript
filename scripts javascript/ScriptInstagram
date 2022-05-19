@@ -1,0 +1,17 @@
+
+var cont=0;
+setInterval(function comentar(){
+
+document.querySelector("body > div.RnEpo._Yhr4 > div.pbNvD.QZZGH.bW6vo > div > article > div > div.HP0qD > div > div > div.eo2As > section.sH9wk._JgwE > div > form > button").disabled=false;
+
+
+document.querySelector('textarea.PUqUI.Ypffh').value="@oscarallos11";
+
+
+
+document.querySelector("body > div.RnEpo._Yhr4 > div.pbNvD.QZZGH.bW6vo > div > article > div > div.HP0qD > div > div > div.eo2As > section.sH9wk._JgwE > div > form > button").click();
+cont++;
+console.log("Has enviado " + cont +" comentarios");
+}, 3000);
+
+

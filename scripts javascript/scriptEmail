@@ -1,0 +1,26 @@
+
+ 
+
+var cont=0;
+setInterval(function redactar(){
+console.log("hola");
+var nuevo=document.querySelector('div.T-I.T-I-KE.L3');
+var para=document.querySelector('textarea.vO');
+var asunto=document.querySelector('input.aoT');
+var email=document.querySelector('div.Am.Al.editable.LW-avf.tS-tW');
+var enviar=document.querySelector('div.T-I.J-J5-Ji.aoO.v7.T-I-atl.L3');
+
+nuevo.click();
+para.innerHTML= "oscarallos17@gmail.com";
+asunto.innerHTML= "MUY IMPORTANTE!!";
+email.innerHTML= "Este mensaje ha sido creado y enviado de forma automatizada";
+enviar.click();
+cont++;
+console.log("Has enviado" + cont + "correos");
+
+}, 10000);
+
+
+
+
+
