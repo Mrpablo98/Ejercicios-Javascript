@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="marca">
+    <p id="parrafo"></p>
+    <button onclick="marca()">Comprobar</button>
+    <script>
+       
+        function comparar(str1, str2){
+                return str1.toUpperCase() == str2.toUpperCase();
+}
+
+        function marca(){
+            var x=document.getElementById("marca").value;
+            if(comparar (x, "BMW")==true){
+                document.getElementById("parrafo").innerHTML="Coche alemán";
+            }else if(comparar(x, "Ford")==true){
+                document.getElementById("parrafo").innerHTML="Coche americano";
+            }else if(comparar(x, "Peugeot")==true)
+                document.getElementById("parrafo").innerHTML="Coche frances";
+            else
+                document.getElementById("parrafo").innerHTML="Coche no reconocido";
+        }
+    </script>
+</body>
+</html>
